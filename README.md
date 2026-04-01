@@ -12,6 +12,20 @@ A simple autoscaler based active request of pods and scale deployment
 
 `./bin/rio-autoscaler`
 
+## Docker image
+
+Default image repository is now `chenmins/rio-autoscaler`.
+
+## GitHub Actions
+
+This repo includes `.github/workflows/docker-publish.yml` to automatically build and publish
+`chenmins/rio-autoscaler` to Docker Hub when pushing to `main` / `master`, creating a `v*` tag, or running manually.
+
+Required repository secrets:
+
+- `DOCKERHUB_USERNAME`
+- `DOCKERHUB_TOKEN`
+
 ## License
 Copyright (c) 2018 [Rancher Labs, Inc.](http://rancher.com)
 
